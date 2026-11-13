@@ -1,1 +1,468 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systemica | Sistemas y automatizaciones para empresas</title>
+    <meta name="description" content="SYSTEMICA adapta sistemas y automatizaciones a los procesos, usuarios y necesidades de empresas y negocios. Conoce proyectos reales.">
+    <link rel="icon" href="assets/img/logo/logo.png" type="image/png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <!-- Fuentes e íconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body class="relative min-h-screen">
 
+    <!-- Luces de fondo -->
+    <div class="glow-bg w-[500px] h-[500px] bg-brand-purple/20 top-[-100px] left-[-100px]"></div>
+    <div class="glow-bg w-[600px] h-[600px] bg-brand-blue/20 top-[20%] right-[-150px]"></div>
+    <div class="glow-bg w-[400px] h-[400px] bg-brand-orange/15 bottom-[10%] left-[20%]"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 px-4 sm:px-8 py-4">
+        <div class="max-w-7xl mx-auto glass-nav rounded-2xl px-6 py-3 flex items-center justify-between shadow-2xl">
+            <a href="#" class="flex items-center gap-2 group">
+                <span class="font-heading font-extrabold text-2xl tracking-tight text-white">SYSTEMICA</span>
+            </a>
+            <nav id="desktop-nav" class="hidden md:flex items-center gap-8 text-sm font-medium"><a href="#inicio" class="text-brand-orange transition-colors">Inicio</a><a href="#nosotros" class="text-gray-300 hover:text-white transition-colors">Nosotros</a><a href="#proceso" class="text-gray-300 hover:text-white transition-colors">Cómo trabajamos</a><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Servicios</a><a href="#proyectos" class="text-gray-300 hover:text-white transition-colors">Proyectos</a><a href="#contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a></nav>
+            <div class="flex items-center gap-4">
+                <a href="#contacto" class="hidden lg:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-xl border border-brand-orange/50 text-brand-orange hover:bg-brand-orange hover:text-white transition-all duration-300">Cotizar Proyecto</a>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2" aria-label="Abrir menú" aria-expanded="false"><i class="fa-solid fa-bars text-xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden max-w-7xl mx-auto mt-2 glass-nav rounded-2xl p-6 flex-col gap-4 text-center shadow-2xl">
+            <a href="#inicio" class="text-brand-orange font-medium py-1">Inicio</a><a href="#nosotros" class="text-gray-300 hover:text-white font-medium py-1">Nosotros</a><a href="#proceso" class="text-gray-300 hover:text-white font-medium py-1">Cómo trabajamos</a><a href="#servicios" class="text-gray-300 hover:text-white font-medium py-1">Servicios</a><a href="#proyectos" class="text-gray-300 hover:text-white font-medium py-1">Proyectos</a><a href="#contacto" class="text-gray-300 hover:text-white font-medium py-1">Contacto</a>
+        </div>
+    </header>
+
+<main>
+    <!-- HERO -->
+    <section id="inicio" class="pt-36 pb-20 md:pt-44 md:pb-32 px-4 sm:px-8 max-w-7xl mx-auto min-h-screen flex items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-brand-orange/30 text-xs sm:text-sm font-semibold text-brand-orange shadow-lg shadow-brand-orange/5">
+                    <span class="w-2 h-2 rounded-full bg-brand-orange animate-ping"></span>
+                    Sistemas y Automatizaciones para Empresas
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight">
+                    Sistemas para <br class="hidden sm:inline" />gestionar y automatizar <br />
+                    <span class="gradient-text">tu negocio</span>
+                </h1>
+                <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">No vendemos un sistema genérico: adaptamos cada solución a los procesos, necesidades y equipo de tu negocio, ya sea para trabajar localmente o en línea.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contacto" class="w-full sm:w-auto px-8 py-4 rounded-xl gradient-brand text-white font-bold text-sm sm:text-base flex items-center justify-center gap-3 shadow-xl shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:scale-[1.02] active:scale-[0.98] transition-all group">
+                        <span>Iniciar Mi Proyecto</span><i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#servicios" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card border border-brand-border hover:border-brand-orange/50 text-white font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-white/5 transition-all">
+                        <span>Explorar Servicios</span><i class="fa-solid fa-angle-down text-xs text-gray-400"></i>
+                    </a>
+                </div>
+                <div class="pt-8 border-t border-gray-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div><p class="font-heading font-bold text-lg sm:text-2xl text-white">A medida</p><p class="text-[10px] sm:text-xs text-gray-400 mt-1">Según tu negocio</p></div>
+                    <div><p class="font-heading font-bold text-lg sm:text-2xl text-white">Garantía</p><p class="text-[10px] sm:text-xs text-gray-400 mt-1">Errores del sistema cubiertos</p></div>
+                    <div><p class="font-heading font-bold text-lg sm:text-2xl text-white">Mejoras</p><p class="text-[10px] sm:text-xs text-gray-400 mt-1">Se cotizan aparte</p></div>
+                </div>
+            </div>
+
+            <!-- Maqueta visual. Si prefieres una foto: reemplaza TODO este bloque por
+                 <div class="media rounded-3xl aspect-[4/3]"><img src="assets/img/hero/hero.jpg" alt="..."></div> -->
+            <div class="lg:col-span-5 relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/20 to-brand-purple/30 rounded-3xl blur-2xl transform rotate-3 scale-95 opacity-70"></div>
+                <div class="relative glass-card rounded-3xl p-6 border border-white/10 shadow-2xl overflow-hidden">
+                    <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-800">
+                        <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div>
+                        <span class="text-xs text-gray-500 font-mono">panel.systemica</span>
+                        <span class="text-xs text-gray-500">Vista de demostración</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-32 rounded-2xl bg-gradient-to-r from-brand-card via-brand-purple/20 to-brand-border p-4 flex flex-col justify-between border border-white/5">
+                            <div class="w-24 h-4 bg-white/20 rounded-md animate-pulse"></div>
+                            <div class="space-y-2"><div class="w-3/4 h-3 bg-white/10 rounded"></div><div class="w-1/2 h-3 bg-brand-orange/40 rounded"></div></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-brand-orange/20 flex items-center justify-center text-brand-orange text-sm"><i class="fa-solid fa-chart-line"></i></div><div><p class="text-xs font-bold text-white">Gestión</p><p class="text-[10px] text-gray-400">Información organizada</p></div></div>
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-brand-purple/30 flex items-center justify-center text-purple-400 text-sm"><i class="fa-solid fa-bolt"></i></div><div><p class="text-xs font-bold text-white">Automatización</p><p class="text-[10px] text-gray-400">Según tus procesos</p></div></div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between">
+                            <div class="flex items-center gap-3"><div class="w-3 h-3 rounded-full bg-brand-whatsapp animate-ping"></div><span class="text-xs text-gray-300 font-medium">Interfaz de demostración</span></div>
+                            <i class="fa-solid fa-check text-brand-whatsapp text-xs"></i>
+                        </div>
+                    </div>
+                    <div class="absolute -top-4 -right-4 glass-card p-4 rounded-2xl border border-brand-orange/30 shadow-xl hidden sm:flex items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-brand-orange/20 flex items-center justify-center text-brand-orange"><i class="fa-solid fa-rocket"></i></div>
+                        <div><p class="text-xs font-bold text-white">A tu medida</p><p class="text-[10px] text-gray-400">Diseño según tu negocio</p></div>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 glass-card p-4 rounded-2xl border border-brand-blue/30 shadow-xl hidden sm:flex items-center gap-3 animate-float-delayed">
+                        <div class="w-10 h-10 rounded-xl bg-brand-blue/30 flex items-center justify-center text-indigo-400"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div><p class="text-xs font-bold text-white">Hecho a tu medida</p><p class="text-[10px] text-gray-400">Sistemas para tu negocio</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="py-20 px-4 sm:px-8 max-w-5xl mx-auto">
+        <div class="space-y-6">
+            <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-orange uppercase">¿Quiénes somos?</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white font-heading">Tecnología para mejorar la gestión de tu negocio</p>
+            <p class="text-gray-400">En Systemica ayudamos a pequeñas empresas, tiendas y negocios de Guatemala con sistemas y automatizaciones adaptados a sus procesos.</p>
+            <p class="text-lg font-bold text-brand-orange">SYSTEMICA: Automatizando tu empresa</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
+            <article class="glass-card rounded-2xl p-6 border border-white/5">
+                <h3 class="font-bold text-white">Historia y origen</h3>
+                <p class="mt-3 text-sm leading-6 text-gray-400">SYSTEMICA nació en 2024 con la idea de transformar los sistemas tradicionales en soluciones automatizadas para empresas y negocios. Desde entonces, su enfoque es crear herramientas digitales que ayuden a organizar procesos cotidianos como inventarios, ventas, facturas, movimientos financieros y asistencia escolar.</p>
+            </article>
+            <article class="glass-card rounded-2xl p-6 border border-white/5">
+                <h3 class="font-bold text-white">Misión</h3>
+                <p class="mt-3 text-sm leading-6 text-gray-400">Diseñar sistemas y soluciones digitales que ayuden a empresas, tiendas, ferreterías y centros educativos a organizar sus procesos, consultar su información y simplificar tareas de acuerdo con sus necesidades.</p>
+            </article>
+            <article class="glass-card rounded-2xl p-6 border border-white/5">
+                <h3 class="font-bold text-white">Visión</h3>
+                <p class="mt-3 text-sm leading-6 text-gray-400">Ser una empresa de tecnología confiable y cercana, reconocida por crear soluciones útiles y adaptables que apoyen la organización y el crecimiento de negocios e instituciones.</p>
+            </article>
+            <article class="glass-card rounded-2xl p-6 border border-white/5">
+                <h3 class="font-bold text-white">Valores corporativos</h3>
+                <ul class="mt-3 space-y-2 text-sm text-gray-400">
+                    <li><span class="font-semibold text-gray-200">Responsabilidad:</span> trabajar con compromiso y claridad en cada proyecto.</li>
+                    <li><span class="font-semibold text-gray-200">Honestidad:</span> comunicar alcances y condiciones de forma transparente.</li>
+                    <li><span class="font-semibold text-gray-200">Innovación:</span> buscar herramientas prácticas para mejorar procesos.</li>
+                    <li><span class="font-semibold text-gray-200">Cercanía:</span> escuchar las necesidades de cada cliente.</li>
+                    <li><span class="font-semibold text-gray-200">Calidad:</span> procurar soluciones claras, útiles y cuidadas.</li>
+                </ul>
+            </article>
+        </div>
+        <div class="space-y-3 mt-10">
+            <h3 class="font-bold text-white">¿Qué problemas te ayudamos a resolver?</h3>
+            <ul class="space-y-2 text-sm text-gray-400">
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-orange mt-1"></i><span>Desorden y falta de control del inventario.</span></li>
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-orange mt-1"></i><span>Dificultad para registrar ingresos y egresos.</span></li>
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-orange mt-1"></i><span>Gestión manual de facturas y documentos.</span></li>
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-orange mt-1"></i><span>Tareas repetitivas que pueden simplificarse.</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROCESO DE TRABAJO -->
+    <section id="proceso" class="py-16 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-24">
+        <div class="text-center max-w-2xl mx-auto mb-10 space-y-3">
+            <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-orange uppercase">Cómo trabajamos</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">De tu necesidad a una solución clara</p>
+        </div>
+        <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <li class="glass-card rounded-2xl p-6 border border-white/5">
+                <span class="text-sm font-bold text-brand-orange">01</span>
+                <h3 class="mt-3 font-bold text-white">Diagnóstico de tu necesidad</h3>
+                <p class="mt-2 text-sm text-gray-400">Conocemos tus procesos, qué quieres mejorar y quiénes usarán el sistema: trabajadores, encargados o dirección.</p>
+            </li>
+            <li class="glass-card rounded-2xl p-6 border border-white/5">
+                <span class="text-sm font-bold text-brand-orange">02</span>
+                <h3 class="mt-3 font-bold text-white">Propuesta y cotización</h3>
+                <p class="mt-2 text-sm text-gray-400">Definimos funciones, perfiles de usuario, modalidad local o en línea, alcance, tiempos e inversión.</p>
+            </li>
+            <li class="glass-card rounded-2xl p-6 border border-white/5">
+                <span class="text-sm font-bold text-brand-orange">03</span>
+                <h3 class="mt-3 font-bold text-white">Desarrollo a tu medida</h3>
+                <p class="mt-2 text-sm text-gray-400">Adaptamos el sistema aprobado a tus necesidades, funciones y permisos para distintos usuarios.</p>
+            </li>
+            <li class="glass-card rounded-2xl p-6 border border-white/5">
+                <span class="text-sm font-bold text-brand-orange">04</span>
+                <h3 class="mt-3 font-bold text-white">Entrega del sistema</h3>
+                <p class="mt-2 text-sm text-gray-400">Entregamos el sistema según el alcance, modalidad y condiciones definidos en la cotización aceptada.</p>
+            </li>
+        </ol>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+            <article class="glass-card rounded-2xl p-6 border border-white/5">
+                <h3 class="font-bold text-white">¿Qué incluye la cotización?</h3>
+                <p class="mt-3 text-sm leading-6 text-gray-400">El alcance y las funciones acordadas, los perfiles y cantidad de usuarios, si será local o en línea, los entregables, el tiempo estimado y el costo. Así sabes qué se desarrollará antes de aceptar.</p>
+            </article>
+            <article class="glass-card rounded-2xl p-6 border border-white/5">
+                <h3 class="font-bold text-white">Costos y condiciones claros</h3>
+                <p class="mt-3 text-sm leading-6 text-gray-400">Cambios o funciones nuevas fuera del alcance aprobado se cotizan aparte. Si el proyecto requiere alojamiento, dominio, licencias o mantenimiento, la cotización especificará si están incluidos o cuánto cuestan.</p>
+            </article>
+        </div>
+        <p class="mt-5 rounded-2xl border border-brand-orange/20 bg-brand-orange/5 p-5 text-sm leading-6 text-gray-300">
+            <strong class="text-brand-orange">Forma de pago:</strong> al aceptar la cotización se paga un 40% de anticipo para iniciar y el 60% restante al entregar el sistema.
+        </p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto relative">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-orange uppercase">Servicios que ofrecemos</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">Sistemas para el trabajo diario de tu negocio</p>
+            <p class="text-gray-400 text-sm sm:text-base">Creamos sistemas para organizar las tareas de empresas, tiendas, ferreterías y centros educativos, según el alcance de cada proyecto.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div class="glass-card glass-card-hover rounded-3xl p-8 flex flex-col justify-between space-y-6 relative group overflow-hidden">
+                <div class="w-14 h-14 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange text-2xl group-hover:scale-110 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300"><i class="fa-solid fa-code"></i></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-white">Gestión empresarial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Organiza en un mismo sistema la información y las operaciones principales de tu negocio.</p>
+                </div>
+                <ul class="space-y-2 text-xs text-gray-300"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Clientes, productos y proveedores</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Inventario y bodega</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Cotizaciones y consultas</li></ul>
+                <a href="#contacto" data-quote-service="Gestión empresarial" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-brand text-white text-sm font-bold shadow-lg shadow-brand-orange/20 hover:scale-[1.02] transition-all">Cotizar este servicio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card glass-card-hover rounded-3xl p-8 flex flex-col justify-between space-y-6 relative group overflow-hidden">
+                <div class="w-14 h-14 rounded-2xl bg-brand-purple/20 border border-brand-purple/30 flex items-center justify-center text-purple-400 text-2xl group-hover:scale-110 group-hover:bg-brand-purple group-hover:text-white transition-all duration-300"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-white">Control de ingresos y egresos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Registra movimientos de dinero y consulta cómo se comportan las entradas y salidas.</p>
+                </div>
+                <ul class="space-y-2 text-xs text-gray-300"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Paneles de ingresos y egresos</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Historial de movimientos</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Resúmenes y gráficas financieras</li></ul>
+                <a href="#contacto" data-quote-service="Control de ingresos y egresos" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-brand text-white text-sm font-bold shadow-lg shadow-brand-orange/20 hover:scale-[1.02] transition-all">Cotizar este servicio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card glass-card-hover rounded-3xl p-8 flex flex-col justify-between space-y-6 relative group overflow-hidden">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-2xl group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-white">Ventas para tiendas y ferreterías</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Herramientas para consultar productos, registrar ventas y llevar el control de existencias.</p>
+                </div>
+                <ul class="space-y-2 text-xs text-gray-300"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Catálogo e inventario</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Registro e historial de ventas</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Bodega y alertas de stock bajo</li></ul>
+                <a href="#contacto" data-quote-service="Ventas para tiendas y ferreterías" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-brand text-white text-sm font-bold shadow-lg shadow-brand-orange/20 hover:scale-[1.02] transition-all">Cotizar este servicio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card glass-card-hover rounded-3xl p-8 flex flex-col justify-between space-y-6 relative group overflow-hidden">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-file-invoice"></i></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-white">Ventas, facturas y cotizaciones</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Organiza clientes, ventas y documentos internos para dar seguimiento a las operaciones comerciales.</p>
+                </div>
+                <ul class="space-y-2 text-xs text-gray-300"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Clientes y productos o servicios</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Punto de venta y cotizaciones</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Historial y documentos imprimibles</li></ul>
+                <p class="text-xs leading-relaxed text-gray-500">Los documentos internos no sustituyen una factura FEL certificada.</p>
+                <a href="#contacto" data-quote-service="Ventas, facturas y cotizaciones" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-brand text-white text-sm font-bold shadow-lg shadow-brand-orange/20 hover:scale-[1.02] transition-all">Cotizar este servicio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card glass-card-hover rounded-3xl p-8 flex flex-col justify-between space-y-6 relative group overflow-hidden">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-white">Asistencia escolar</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Consulta la asistencia y administra información académica desde una interfaz organizada.</p>
+                </div>
+                <ul class="space-y-2 text-xs text-gray-300"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Registro y consulta de asistencias</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Estudiantes, docentes y carreras</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Reportes por fechas y carrera</li></ul>
+                <a href="#contacto" data-quote-service="Asistencia escolar" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-brand text-white text-sm font-bold shadow-lg shadow-brand-orange/20 hover:scale-[1.02] transition-all">Cotizar este servicio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card glass-card-hover rounded-3xl p-8 flex flex-col justify-between space-y-6 relative group overflow-hidden">
+                <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl group-hover:scale-110 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-gears"></i></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-white">Automatización y reportes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Revisamos tareas repetitivas y necesidades de consulta para definir qué puede resolverse con herramientas digitales.</p>
+                </div>
+                <ul class="space-y-2 text-xs text-gray-300"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Análisis del proceso que deseas mejorar</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Reportes y filtros según el alcance acordado</li><li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Exportación de datos cuando aplique</li></ul>
+                <a href="#contacto" data-quote-service="Automatización y reportes" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-brand text-white text-sm font-bold shadow-lg shadow-brand-orange/20 hover:scale-[1.02] transition-all">Cotizar este servicio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="mt-10 glass-card rounded-3xl p-6 sm:p-8 border border-white/10">
+            <h3 class="text-xl font-bold text-white">Desarrollo a la medida</h3>
+            <p class="mt-2 text-sm sm:text-base text-gray-400">Cada proyecto se define según las necesidades de tu negocio. Después de conocer el alcance, acordamos contigo la cotización y el tiempo aproximado de desarrollo.</p>
+            <p class="mt-3 text-sm text-gray-300">La garantía cubre errores propios del sistema. Las modificaciones o nuevas funciones solicitadas por el cliente se cotizan aparte.</p>
+            <p class="mt-3 text-sm text-gray-400">La disponibilidad de instalación, capacitación u otros servicios adicionales se define en cada cotización.</p>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+            <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-orange uppercase">Proyectos</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">Sistemas para tu negocio</p>
+            <p class="text-gray-400 text-sm sm:text-base">Estos sistemas nacen de trabajos reales. No vendemos paquetes cerrados: tomamos esa experiencia y adaptamos funciones, procesos y permisos a cada cliente.</p>
+            <p class="text-gray-500 text-xs">Las imágenes muestran interfaces de referencia; desde esta página no se puede usar cada sistema. Cada cotización se prepara según tus necesidades.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <article class="glass-card glass-card-hover rounded-3xl overflow-hidden border border-white/5">
+                <div class="media interface-slot aspect-[16/10]">
+                    <img src="assets/img/proyectos/GESTION EMPRESARIAL.png" alt="Interfaz del sistema de Gestión Empresarial" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">Gestión empresarial</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-400">Centraliza información de clientes, productos, proveedores y operaciones para consultar la actividad del negocio desde un mismo panel.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Inventario, bodega y control de existencias.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Clientes, proveedores y catálogo de productos.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Cotizaciones, facturas, combos y reportes.</li>
+                    </ul>
+                    <div class="mt-5 border-t border-white/10 pt-4">
+                        <h4 class="text-sm font-bold text-white">Beneficios para tu negocio</h4>
+                        <p class="mt-2 text-sm leading-6 text-gray-400">Puede ayudar a reducir tareas manuales y reunir el control de las operaciones y sus reportes en un solo lugar.</p>
+                        <p class="mt-3 text-xs leading-5 text-gray-400"><strong class="text-gray-300">Cómo trabajamos:</strong> Diagnóstico <span aria-hidden="true">&rarr;</span> propuesta y cotización <span aria-hidden="true">&rarr;</span> desarrollo <span aria-hidden="true">&rarr;</span> entrega.</p>
+                    </div>
+                    <button type="button" data-system-preview class="mt-6 inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/20 transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange">
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i> Vista
+                    </button>
+                </div>
+            </article>
+            <article class="glass-card glass-card-hover rounded-3xl overflow-hidden border border-white/5">
+                <div class="media interface-slot aspect-[16/10]">
+                    <img src="assets/img/proyectos/GESTIÓN INGRESOS Y EGRESOS.png" alt="Interfaz del sistema de Gestión de ingresos y egresos" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">Gestión de ingresos y egresos</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-400">Registra entradas y salidas de dinero para revisar el movimiento financiero y conocer el saldo neto del negocio.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Paneles separados para ingresos y egresos.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Historial para consultar los movimientos registrados.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Gráficas de ingresos, egresos y resultados financieros.</li>
+                    </ul>
+                    <div class="mt-5 border-t border-white/10 pt-4">
+                        <h4 class="text-sm font-bold text-white">Beneficios para tu negocio</h4>
+                        <p class="mt-2 text-sm leading-6 text-gray-400">Puede facilitar el registro de movimientos, dar más claridad sobre el flujo de dinero y apoyar la consulta de reportes financieros.</p>
+                        <p class="mt-3 text-xs leading-5 text-gray-400"><strong class="text-gray-300">Cómo trabajamos:</strong> Diagnóstico <span aria-hidden="true">&rarr;</span> propuesta y cotización <span aria-hidden="true">&rarr;</span> desarrollo <span aria-hidden="true">&rarr;</span> entrega.</p>
+                    </div>
+                    <button type="button" data-system-preview class="mt-6 inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/20 transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange">
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i> Vista
+                    </button>
+                </div>
+            </article>
+            <article class="glass-card glass-card-hover rounded-3xl overflow-hidden border border-white/5">
+                <div class="media interface-slot aspect-[16/10]">
+                    <img src="assets/img/proyectos/Gestión de ventas para ferretería.png" alt="Interfaz del sistema de Gestión de ventas para ferretería" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">Gestión de ventas para ferretería</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-400">Pensado para organizar las ventas y la operación diaria de una ferretería, desde el inventario hasta la consulta de existencias.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Registro de productos, clientes y proveedores.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Panel de ventas, alertas de stock bajo y bodega por estantes.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Reportes de ventas y productos para descargar en PDF.</li>
+                    </ul>
+                    <div class="mt-5 border-t border-white/10 pt-4">
+                        <h4 class="text-sm font-bold text-white">Beneficios para tu negocio</h4>
+                        <p class="mt-2 text-sm leading-6 text-gray-400">Puede ayudar a organizar productos y ventas, consultar existencias con más facilidad y revisar reportes de la ferretería.</p>
+                        <p class="mt-3 text-xs leading-5 text-gray-400"><strong class="text-gray-300">Cómo trabajamos:</strong> Diagnóstico <span aria-hidden="true">&rarr;</span> propuesta y cotización <span aria-hidden="true">&rarr;</span> desarrollo <span aria-hidden="true">&rarr;</span> entrega.</p>
+                    </div>
+                    <button type="button" data-system-preview class="mt-6 inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/20 transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange">
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i> Vista
+                    </button>
+                </div>
+            </article>
+            <article class="glass-card glass-card-hover rounded-3xl overflow-hidden border border-white/5">
+                <div class="media interface-slot aspect-[16/10]">
+                    <img src="assets/img/proyectos/Gestión de ventas para tienda.png" alt="Interfaz del sistema de Gestión de ventas para tienda" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">Gestión de ventas para tienda</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-400">Reúne herramientas para administrar productos y proveedores, registrar ventas y organizar tareas cotidianas de una tienda.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Catálogo de productos y control de existencias.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Registro e historial de ventas y gestión de proveedores.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Calendario de pedidos y notas de seguimiento.</li>
+                    </ul>
+                    <div class="mt-5 border-t border-white/10 pt-4">
+                        <h4 class="text-sm font-bold text-white">Beneficios para tu negocio</h4>
+                        <p class="mt-2 text-sm leading-6 text-gray-400">Puede reducir el seguimiento manual de ventas y pedidos, y ayudar a mantener productos y tareas más organizados.</p>
+                        <p class="mt-3 text-xs leading-5 text-gray-400"><strong class="text-gray-300">Cómo trabajamos:</strong> Diagnóstico <span aria-hidden="true">&rarr;</span> propuesta y cotización <span aria-hidden="true">&rarr;</span> desarrollo <span aria-hidden="true">&rarr;</span> entrega.</p>
+                    </div>
+                    <button type="button" data-system-preview class="mt-6 inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/20 transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange">
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i> Vista
+                    </button>
+                </div>
+            </article>
+            <article class="glass-card glass-card-hover rounded-3xl overflow-hidden border border-white/5">
+                <div class="media interface-slot aspect-[16/10]">
+                    <img src="assets/img/proyectos/Asistencia Escolar.png" alt="Interfaz del sistema de Asistencia Escolar" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">Asistencia Escolar</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-400">Sistema de asistencia escolar para llevar el seguimiento diario de estudiantes y consultar la actividad académica desde un panel con indicadores y reportes.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Dashboard diario con presentes, tardíos, ausentes, total de estudiantes y resumen por carrera.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Consulta y filtro de asistencias por estudiante, carrera, estado y fecha; permite marcar una ausencia justificada.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Administración de estudiantes, docentes y carreras, incluyendo horarios y restablecimiento de contraseñas de usuarios.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Reportes por carrera y rango de fechas, exportación en PDF e impresión.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Herramienta para depurar registros de asistencia por año.</li>
+                    </ul>
+                    <div class="mt-5 border-t border-white/10 pt-4">
+                        <h4 class="text-sm font-bold text-white">Beneficios para tu institución</h4>
+                        <p class="mt-2 text-sm leading-6 text-gray-400">Puede simplificar el registro diario, facilitar el seguimiento de asistencia y organizar la consulta de reportes por estudiante o carrera.</p>
+                        <p class="mt-3 text-xs leading-5 text-gray-400"><strong class="text-gray-300">Cómo trabajamos:</strong> Diagnóstico <span aria-hidden="true">&rarr;</span> propuesta y cotización <span aria-hidden="true">&rarr;</span> desarrollo <span aria-hidden="true">&rarr;</span> entrega.</p>
+                    </div>
+                    <button type="button" data-system-preview class="mt-6 inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/20 transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange">
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i> Vista
+                    </button>
+                </div>
+            </article>
+            <article class="glass-card glass-card-hover rounded-3xl overflow-hidden border border-white/5">
+                <div class="media interface-slot aspect-[16/10]">
+                    <img src="assets/img/proyectos/Gestión de ventas con facturación.png" alt="Interfaz del sistema de Gestión de ventas con facturación" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">Gestión de ventas con facturación</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-400">Ayuda a llevar el control interno de clientes, productos, ventas, cotizaciones e inventario en un solo sistema.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Gestión de clientes y catálogo de productos o servicios.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Punto de venta, cotizaciones e historial de ventas.</li>
+                        <li><i class="fa-solid fa-check mr-2 text-brand-orange"></i>Documentos internos imprimibles; no sustituye una factura FEL certificada.</li>
+                    </ul>
+                    <div class="mt-5 border-t border-white/10 pt-4">
+                        <h4 class="text-sm font-bold text-white">Beneficios para tu negocio</h4>
+                        <p class="mt-2 text-sm leading-6 text-gray-400">Puede ayudar a reducir el registro repetido de ventas y reunir clientes, productos e información de facturación interna para consultar reportes.</p>
+                        <p class="mt-3 text-xs leading-5 text-gray-400"><strong class="text-gray-300">Cómo trabajamos:</strong> Diagnóstico <span aria-hidden="true">&rarr;</span> propuesta y cotización <span aria-hidden="true">&rarr;</span> desarrollo <span aria-hidden="true">&rarr;</span> entrega.</p>
+                    </div>
+                    <button type="button" data-system-preview class="mt-6 inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/20 transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange">
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i> Vista
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <dialog id="system-preview" class="system-preview" aria-labelledby="system-preview-title">
+        <div class="system-preview__content">
+            <header class="system-preview__header">
+                <h2 id="system-preview-title" class="text-lg sm:text-xl font-bold text-white"></h2>
+                <button type="button" id="system-preview-close" class="system-preview__close" aria-label="Cerrar vista">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <img id="system-preview-image" class="system-preview__image" alt="">
+            <p class="system-preview__caption">Vista de interfaz de demostración</p>
+        </div>
+    </dialog>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div class="space-y-5">
+            <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-orange uppercase">Contacto</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white font-heading">Cuéntanos sobre tu proyecto</p>
+            <p class="text-gray-400">Escríbenos y cuéntanos qué procesos quieres mejorar en tu negocio.</p>
+            <p class="text-sm text-gray-300 leading-loose">business145w@gmail.com<br>+502 4290 2870<br>Guatemala</p>
+        </div>
+        <form id="form" novalidate class="glass-card rounded-3xl p-8 space-y-4">
+            <input name="nombre" required placeholder="Nombre" aria-label="Nombre" class="w-full rounded-xl bg-white/5 border border-white/10 focus:border-brand-orange focus:outline-none px-4 py-3 text-sm text-white">
+            <input name="correo" type="email" required placeholder="Correo" aria-label="Correo" class="w-full rounded-xl bg-white/5 border border-white/10 focus:border-brand-orange focus:outline-none px-4 py-3 text-sm text-white">
+            <textarea name="mensaje" rows="4" required placeholder="Mensaje" aria-label="Mensaje" class="w-full rounded-xl bg-white/5 border border-white/10 focus:border-brand-orange focus:outline-none px-4 py-3 text-sm text-white"></textarea>
+            <button type="submit" class="w-full px-8 py-4 rounded-xl gradient-brand text-white font-bold text-sm hover:scale-[1.02] active:scale-[0.98] transition-all">Enviar por WhatsApp</button>
+            <p id="form-msg" role="status" class="text-xs text-gray-400 min-h-[1.2em]"></p>
+        </form>
+    </section>
+</main>
+
+    <!-- WhatsApp flotante -->
+    <div class="fixed bottom-6 left-6 z-50 floating-whatsapp">
+        <a href="https://wa.me/50242902870" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="relative group flex items-center justify-center w-14 h-14 rounded-full bg-brand-whatsapp text-white text-2xl shadow-xl shadow-brand-whatsapp/30 hover:scale-110 active:scale-95 transition-all">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="absolute top-0 right-0 w-4 h-4 bg-emerald-400 border-2 border-brand-dark rounded-full"></span>
+            <span class="absolute top-0 right-0 w-4 h-4 bg-emerald-400 rounded-full animate-ping opacity-75"></span>
+            <span class="absolute left-16 bg-brand-card text-white text-xs px-3 py-2 rounded-xl whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity border border-white/10 shadow-xl">¡Chatea con nosotros!</span>
+        </a>
+    </div>
+
+    <!-- CTA flotante -->
+    <div class="fixed bottom-6 right-6 z-50 floating-quote">
+        <a href="#contacto" class="gradient-brand text-white px-5 py-3.5 rounded-full font-bold text-xs sm:text-sm flex items-center gap-3 shadow-2xl shadow-brand-orange/40 hover:scale-105 active:scale-95 transition-all group border border-white/20">
+            <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs group-hover:rotate-45 transition-transform"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            <span class="hidden sm:inline">Cuéntanos sobre tu proyecto</span><span class="sm:hidden">Cotizar</span>
+        </a>
+    </div>
+
+    <footer class="py-8 border-t border-gray-800 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Systemica. Todos los derechos reservados.</p>
+        <a href="terminos.html" class="mt-3 inline-block text-gray-400 underline decoration-gray-600 underline-offset-4 transition hover:text-brand-orange">Términos y condiciones</a>
+    </footer>
+
+    <script src="js/main.js?v=3"></script>
+</body>
+</html>
